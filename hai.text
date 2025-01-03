@@ -1,0 +1,102 @@
+<//ini ada kode untuk dropdown//>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  Dropdown
+  </a>
+  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</li>
+<//end>
+
+//Ini Guru//
+<!-- <script setup>
+import { ref } from "vue";
+
+useHead({
+  title: "Guru - Website Sekolah"
+})
+
+const db_teachers = ref([
+  {
+    id: 1,
+    nama: "Zul Hilmi",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+  {
+    id: 2,
+    nama: "Taufik Hidayat",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+  {
+    id: 3,
+    nama: "Lisye Ingriani",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+  {
+    id: 4,
+    nama: "Arip",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+  {
+    id: 5,
+    nama: "Deni Maulana",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+  {
+    id: 6,
+    nama: "Adi Iasan",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+  {
+    id: 7,
+    nama: "Suminar",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+  {
+    id: 8,
+    nama: "Tini Gartini",
+    foto: "https://avatars.githubusercontent.com/u/6418851?v=4",
+  },
+]);
+
+const teachers = ref([...db_teachers.value.slice(0, 3)]);
+const start = ref(teachers.value.length);
+const end = ref(start.value + 3);
+
+const loadmore = () => {
+  teachers.value = [
+    ...teachers.value,
+    ...db_teachers.value.slice(start.value, end.value),
+  ];
+  start.value = end.value;
+  end.value = end.value + 3;
+};
+</script> -->
+
+<!-- <template>
+  <div class="utama">
+    <div class="page-title">
+      <h1 class="judul">Guru/Pendidik</h1>
+      <p class="text-muted text-center">Guru-Guru SMKN 4 Tasikmalaya</p>
+    </div> -->
+    
+   <!-- Baris untuk kartu -->
+   <!-- <div class="row justify-content-center g-2">
+      <div v-for="teacher in teachers" :key="teacher.id" class="col-md-4 d-flex justify-content-center align-items-stretch">
+        <div class="card" style="width: 16rem;">
+          <img :src="teacher.foto" alt="Foto Guru" class="card-img-top" />
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ teacher.nama }}</h5>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Tombol Load More -->
+    <!-- <div class="text-center mt-3">
+      <button class="btn btn-dark" @click="loadmore" v-if="start < db_teachers.length">Load More</button>
+    </div>
+  </div>
+</template> -->
